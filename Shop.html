@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang='en'>
+<head>
+  <meta charset='utf-8'/>
+  <meta name='viewport' content='width=device-width, initial-scale=1'/>
+  <title>Shop - Niyantri Coffee</title>
+  <meta name='description' content='Shop coffee gear and gifts from Niyantri Coffee.'/>
+  <script src='https://cdn.tailwindcss.com'></script>
+</head>
+<body class='opacity-0 transition-all duration-700 ease-in-out'>
+  <header class='fixed w-full z-50 bg-white/90 backdrop-blur'>
+    <div class='max-w-6xl mx-auto px-4 flex items-center justify-between h-16'>
+      <a href='index.html' class='text-2xl font-bold text-amber-900'>Niyantri Coffee</a>
+      <nav class='hidden md:flex space-x-6'>
+        <a href='index.html' class='text-gray-800 hover:text-amber-700 transition-all duration-300'>Home</a>
+        <a href='about.html' class='text-gray-800 hover:text-amber-700 transition-all duration-300'>About</a>
+        <a href='Menu.html' class='text-gray-800 hover:text-amber-700 transition-all duration-300'>Menu</a>
+        <a href='Shop.html' class='text-gray-800 hover:text-amber-700 transition-all duration-300'>Shop</a>
+        <a href='Gallery.html' class='text-gray-800 hover:text-amber-700 transition-all duration-300'>Gallery</a>
+        <a href='contact.html' class='text-gray-800 hover:text-amber-700 transition-all duration-300'>Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class='pt-20'>
+    <section class='py-8 bg-gray-50'>
+      <div class='max-w-6xl mx-auto px-4'>
+        <h1 class='text-3xl font-bold mb-4'>Shop Gear & Gifts</h1>
+        <p class='text-gray-700'>Bring the Niyantri vibe home with our brewing kits and mugs.</p>
+      </div>
+    </section>
+
+    <section class='py-8'>
+      <div class='max-w-6xl mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-6'>
+        <div class='border rounded-lg p-4 hover:shadow-xl transition-all duration-300'>
+          <h3 class='font-semibold mb-2'>Niyantri Brew Kit</h3>
+          <p class='text-gray-700'>Everything you need to brew cafe-quality coffee at home. ₹799</p>
+          <img src='https://images.unsplash.com/photo-1585435247026-1d8560423d52?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3ODkyNDZ8MHwxfHNlYXJjaHw2fHxjb21wYWN0JTIwY29mZmVlJTIwYnJld2luZyUyMGtpdCUyMHdpdGglMjBzdGFpbmxlc3MlMjBzdGVlbCUyMHBhcnRzfGVufDB8MHx8fDE3NTg0NjQ0MTR8MA&ixlib=rb-4.1.0&q=80&w=1080' alt='Brew kit' class='w-full mt-2 h-40 object-cover rounded'/>
+          <a href='Shop.html' class='inline-block mt-2 text-amber-600 hover:underline transition-all duration-300'>Add to Cart</a>
+        </div>
+        <div class='border rounded-lg p-4 hover:shadow-xl transition-all duration-300'>
+          <h3 class='font-semibold mb-2'>Niyantri Mug</h3>
+          <p class='text-gray-700'>Keeps coffee warm with a comfy grip. ₹299</p>
+          <img src='https://pixabay.com/get/g2fb0622da7547225e2f9cc2aa23ed307714f4d6bba38d960ab0e6ff59247aa41b2a9b07780c3bb6dda884e1291121e41_640.jpg' alt='Ceramic mug' class='w-full mt-2 h-40 object-cover rounded'/>
+          <a href='Shop.html' class='inline-block mt-2 text-amber-600 hover:underline transition-all duration-300'>Add to Cart</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class='bg-gray-900 text-white'>
+    <div class='max-w-6xl mx-auto px-4 py-8 grid grid-cols-1 md:grid-cols-3 gap-6'>
+      <div>
+        <h3 class='text-xl font-bold'>Niyantri Coffee</h3>
+        <p class='text-gray-300 mt-2'>Shop coffee gear and gifts in Hyderabad.</p>
+      </div>
+      <div>
+        <h4 class='font-semibold mb-2'>Links</h4>
+        <ul class='space-y-2'>
+          <li><a href='index.html' class='text-gray-300 hover:text-amber-300 transition-all duration-300'>Home</a></li>
+          <li><a href='Menu.html' class='text-gray-300 hover:text-amber-300 transition-all duration-300'>Menu</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class='font-semibold mb-2'>Newsletter</h4>
+        <form class='flex'>
+          <input type='email' placeholder='Your email' class='w-full px-3 py-2 rounded bg-white text-black'/>
+          <button class='bg-amber-500 hover:bg-amber-600 text-white px-4 py-2 rounded transition-all duration-300'>Join</button>
+        </form>
+      </div>
+    </div>
+    <hr class='border-gray-700 mx-4'/>
+    <p class='text-center py-4 text-gray-400'>© 2025 Niyantri Coffee — Hyderabad, Telangana, India</p>
+  </footer>
+
+  <script>
+    const btn = document.getElementById('mobile-menu-button');
+    const mobile = document.getElementById('mobile-menu');
+    if(btn && mobile){ btn.addEventListener('click', ()=> { mobile.classList.toggle('hidden'); }); }
+    window.addEventListener('load', ()=>{ document.body.classList.add('opacity-100'); });
+  </script>
+</body>
+</html>
