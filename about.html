@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang='en'>
+<head>
+  <meta charset='utf-8'/>
+  <meta name='viewport' content='width=device-width, initial-scale=1'/>
+  <title>About - Niyantri Coffee</title>
+  <meta name='description' content='Learn about Niyantri Coffee, our story, roasting philosophy, and the warm cafe vibe.'/>
+  <script src='https://cdn.tailwindcss.com'></script>
+</head>
+<body class='opacity-0 transition-all duration-700 ease-in-out'>
+  <header class='fixed w-full z-50 bg-white/90 backdrop-blur'>
+    <div class='max-w-6xl mx-auto px-4 flex items-center justify-between h-16'>
+      <a href='index.html' class='text-2xl font-bold text-amber-900'>Niyantri Coffee</a>
+      <nav class='hidden md:flex space-x-6'>
+        <a href='index.html' class='text-gray-800 hover:text-amber-700 transition-all duration-300'>Home</a>
+        <a href='about.html' class='text-gray-800 hover:text-amber-700 transition-all duration-300'>About</a>
+        <a href='Menu.html' class='text-gray-800 hover:text-amber-700 transition-all duration-300'>Menu</a>
+        <a href='Shop.html' class='text-gray-800 hover:text-amber-700 transition-all duration-300'>Shop</a>
+        <a href='Gallery.html' class='text-gray-800 hover:text-amber-700 transition-all duration-300'>Gallery</a>
+        <a href='contact.html' class='text-gray-800 hover:text-amber-700 transition-all duration-300'>Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class='pt-20'>
+    <section class='min-h-screen flex items-center justify-center text-center bg-gradient-to-br from-amber-300 to-amber-500 overflow-hidden'>
+      <div class='relative w-full h-full'>
+        <img src='https://images.pexels.com/photos/6560995/pexels-photo-6560995.jpeg?auto=compress&cs=tinysrgb&h=650&w=940' alt='Cozy coffee corner' class='w-full h-full object-cover' />
+        <div class='absolute inset-0 bg-black/40'></div>
+      </div>
+      <div class='relative z-10 max-w-2xl px-4 text-white'>
+        <h1 class='text-4xl font-extrabold'>Our Story</h1>
+        <p class='mt-4 text-lg'>Niyantri Coffee began as a warm nook for students and coffee lovers in Hyderabad. We roast with care, brew with passion, and create vibes that feel like a friendly chat with your favorite cafe buddy.</p>
+      </div>
+    </section>
+
+    <section class='py-16'>
+      <div class='max-w-4xl mx-auto px-4 text-center'>
+        <h2 class='text-3xl font-bold mb-4'>Roasting Philosophy</h2>
+        <p class='text-gray-700'>We source ethically, roast to highlight sweetness and brightness, and keep the environment in mind with sustainable practices. Our beans are chosen to pair well with study sessions and long conversations alike.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class='bg-gray-900 text-white'>
+    <div class='max-w-6xl mx-auto px-4 py-8 grid grid-cols-1 md:grid-cols-3 gap-6'>
+      <div>
+        <h3 class='text-xl font-bold'>Niyantri Coffee</h3>
+        <p class='text-gray-300 mt-2'>A warm cafe in Hyderabad for students and coffee lovers.</p>
+      </div>
+      <div>
+        <h4 class='font-semibold mb-2'>Location</h4>
+        <p class='text-gray-300'>Hyderabad, Telangana, India</p>
+      </div>
+      <div>
+        <h4 class='font-semibold mb-2'>Our Process</h4>
+        <p class='text-gray-300'>Sourcing → Roasting → Brewing. All with a smile.</p>
+      </div>
+    </div>
+    <hr class='border-gray-700 mx-4'/>
+    <p class='text-center py-4 text-gray-400'>© 2025 Niyantri Coffee — Hyderabad, Telangana, India</p>
+  </footer>
+
+  <script>
+    const btn = document.getElementById('mobile-menu-button');
+    const mobile = document.getElementById('mobile-menu');
+    if(btn && mobile){ btn.addEventListener('click', ()=> { mobile.classList.toggle('hidden'); }); }
+    window.addEventListener('load', ()=>{ document.body.classList.add('opacity-100'); });
+  </script>
+</body>
+</html>
